@@ -1,0 +1,32 @@
+/*
+Author: Samuele Bagalà, Septiember 2021
+Email: samuele@box2box.es
+Github @bagalasamuele */
+
+h1 {
+    font-size: 1.25em;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+#floor-plan {
+    width:65vw;
+    height:65vw;
+    margin: auto;
+    border: 1px solid #666;
+    background-size: 100% auto;
+ }
+
+#floor-plan svg {
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+
+@media ( max-width: 50em ) {
+#floor-plan {
+    width: 94vw;
+    height: 94vw;
+  }
+ }

@@ -1,0 +1,39 @@
+version: '3.8'
+
+volumes:
+  staging_postgres_data:
+  staging_postgres_data_backups:
+
+services:
+  api:
+    image: eu.gcr.io/box2box-cloud/api-evento
+    build:
+      context: ../../
+      dockerfile: ./deployment/test/Dockerfile
+    depends_on:
+      - postgres
+    volumes:
+      - /var/www/box2box-staging/staticfiles:/web/staticfiles
+    command: ./deployment/test/start.sh
+    ports:
+      - "8000:8000"
+    restart: always
+    ulimits:
+      nofile:
+        hard: 4096
+        soft: 4096
+    sysctls:
+      net.core.somaxconn: 4096
+
+  postgres:
+    restart: always
+    image: postgres:13.4
+    volumes:
+      - staging_postgres_data:/var/lib/postgresql/data
+      - staging_postgres_data_backups:/backups
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=api-dev
+      - POSTGRES_USER=boxtobox
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}

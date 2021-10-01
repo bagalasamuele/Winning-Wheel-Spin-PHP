@@ -1,0 +1,127 @@
+/** Author: Samuele Bagalà, October 2021
+Email: samuele@box2box.es
+Github @bagalasamuele
+
+**/
+
+<mjml>
+  <mj-body background-color="#fff">
+
+<!--Header -->
+    <mj-section background-color="#fff" padding-bottom="20px" padding-top="20px">
+      <mj-column width="100%">
+        <mj-image align="center" padding="10px 25px" src="https://www.box2box.es/documents/box2box.png" target="_blank" width="250px"></mj-image> <!--change when we have a cloud storage -->
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#fff" padding-bottom="0px" padding-top="0">
+      <mj-column width="100%">
+        <mj-text align="center" font-size="16px" color="#140c40" font-family="Verdana" padding-left="25px" padding-right="25px" padding-bottom="18px" padding-top="10px">
+          <p style="font-size:20px; color:#140c40;"><span style="font-size:20px; font-weight:bold">Good job! Congratulations!</span></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+
+<!-- Section 1 -->
+
+    <mj-section background-color="#fff" padding-bottom="5px" padding-top="0">
+      <mj-column width="100%">
+        <mj-divider border-color="#ffffff" border-width="2px" border-style="solid" padding-left="40px" padding-right="40px" padding-bottom="0px" padding-top="0"></mj-divider>
+        <mj-text align="left" color="#140c40" font-family="Verdana" padding-left="25px" padding-right="25px" padding-bottom="28px" padding-top="28px"><span style="font-size:20px; font-weight:bold;  color:#4760ff"> Hi {{var:name:""}}!</span>
+          <br />
+<p style="font-size:13px; color:#140c40;">So what do you think about the South Summit 2021? 
+Awesome right?</br><br></br>We are so happy of having shared this experience with you.
+As promised, here is your voucher!
+</p>
+        </mj-text>
+      
+       <mj-image align="center" padding="10px 25px" src="https://www.box2box.es/event/images/top.png" target="_blank"></mj-image>
+<mj-text align="center" font-family="Verdana"><p>{{var:voucher:""}}</p> </mj-text>
+<mj-image align="center" padding="10px 25px" src="https://www.box2box.es/event/images/down.png" target="_blank"></mj-image> <!--change when we have a cloud storage -->
+      
+<mj-text font-family="Verdana" font-size="13px">
+<p align="center">To use your voucher ( {{var:voucher:""}}) you will just need to mention it at the moment of doing your booking. It's as easy as storing your stuff with box2box!
+<br></br><br></br></p></mj-text>
+      
+<mj-text>
+  <p align="left" font-size="10px">
+    <b>Terms of use:</b>
+  <li>This voucher is valid until 07/04/2021.</li>
+  <li>This voucher is not combinable with other offers.</li>
+  <li>This voucher can only be used once for person.</li>
+</p>
+ </mj-text>
+      
+      
+      
+      </mj-column>
+
+    </mj-section>
+
+
+
+<!-- Section 2 -->
+<mj-section background-color="#fff" padding-bottom="5px" padding-top="0">
+ 	<mj-column width="100%">
+       		 <mj-divider border-color="#140c40" border-width="2px" border-style="solid" padding-left="20px" padding-right="20px" padding-bottom="0px" padding-top="0"></mj-divider>
+
+
+
+
+ <mj-image align="center"  src="https://www.box2box.es/event/images/resena.png" target="_blank" width="250px"></mj-image>
+      
+    <mj-text align="center" font-size="20px">
+
+    <p>4,9/5<br></br>More of 800 reviews on google!</p>
+      </mj-text>	 
+	</mj-column>
+</mj-section>
+
+<!-- Section 3 -->
+<mj-section>
+
+
+      <mj-column width="50%">
+        <mj-button background-color="#140c40" color="#FFF" font-size="14px" align="center" font-weight="bold" border="none" padding="15px 30px" border-radius="10px" href="https://www.google.com/search?q=box2box+opiniones&rlz=1C1CHBF_enES891ES891&ei=8u1WYaSFEfiCjLsPqKac0A0&oq=box2box+opiniones&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQsAMQQzIQCC4QxwEQrwEQyAMQsAMQQzIQCC4QxwEQ0QMQyAMQsAMQQ0oFCDgSATFKBAhBGABQAFgAYKItaAFwAngAgAEAiAEAkgEAmAEAyAELwAEB&sclient=gws-wiz#lrd=0xd42262f6ba478f7:0xb4717d7f2401096f,1" font-family="Helvetica" padding-left="25px" padding-right="25px" padding-bottom="10px">See reviews</mj-button>
+      </mj-column>
+</mj-section>
+
+
+
+<!-- Section 4 -->
+
+<mj-section background-color="#fff" padding-bottom="5px" padding-top="0">
+      <mj-column width="100%">
+
+        <mj-text align="center" color="#140c40" font-size="15px" font-family="Helvetica" padding-left="25px" padding-right="25px" padding-bottom="20px" padding-top="20px"><b>Customer service</b><br><br />
+           <span style="font-size:15px">
+            From Monday to Friday: 9am to 8pm <br><br>
+            Saturdays: 10am to 5pm</span>
+        </mj-text>
+
+      </mj-column>
+          </mj-column>
+        </mj-section>
+
+<!-- Footer -->
+    <mj-section background-color="#140c40" padding-bottom="15px">
+      <mj-column>
+        <mj-text align="center" color="#FFF" font-size="15px" font-family="Roboto,Helvetica,Arial,sans-serif" padding-left="25px" padding-right="25px" padding-bottom="0px"><strong>Website</strong></mj-text>
+        <mj-text align="center" color="#FFF" font-size="13px" font-family="Helvetica" padding-left="25px" padding-right="25px" padding-bottom="20px" padding-top="10px"><a href="https://www.box2box.es/" style='color:white;'>www.box2box.es</a></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" color="#FFF" font-size="15px" font-family="Roboto,Helvetica,Arial,sans-serif" padding-left="25px" padding-right="25px" padding-bottom="0px"><strong>Email</strong></mj-text>
+        <mj-text align="center" color="#FFF" font-size="13px" font-family="Helvetica" padding-left="25px" padding-right="25px" padding-bottom="20px" padding-top="10px"><a href="mailto:contactp@box2box.es" style='color:white;'>contacto@box2box.es</a></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" color="#FFF" font-size="15px" font-family="Roboto,Helvetica,Arial,sans-serif" padding-left="25px" padding-right="25px" padding-bottom="0px"><strong>Phone</strong></mj-text>
+        <mj-text align="center" color="#FFF" font-size="13px" font-family="Helvetica" padding-left="25px" padding-right="25px" padding-bottom="20px" padding-top="10px"><a href="tel:600 277 330" style='color:white;'>+34 600 277 330</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+
+
+  </mj-body>
+</mjml>
